@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "../App.css";
 
 const Layout = () => {
@@ -13,9 +13,9 @@ const Layout = () => {
           {/* <a className="navbar-brand" href="#">
             Container
           </a> */}
-          <Link className="navbar-brand" to={"/"}>
+          <NavLink className="navbar-brand" to={"/"}>
             HOME
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -31,19 +31,19 @@ const Layout = () => {
           <div className="collapse navbar-collapse" id="navbarsExample07">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link " to={"/"}>
+                <NavLink className="nav-link " to={"/"}>
                   Dashboard
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item ">
-                <Link className="nav-link " to={"/records"}>
+                <NavLink className="nav-link " to={"/records"}>
                   Records
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item ">
-                <Link className="nav-link " to={"/about"}>
+                <NavLink className="nav-link " to={"/about"}>
                   About
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
