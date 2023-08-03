@@ -26,11 +26,11 @@ const Records = () => {
 
   return (
     <div className="container mt-5">
-      <div className="text-center border rounded-3 p-3 mb-1">
+      <div className="text-center border border-dark rounded-3 p-3 mb-1">
         <h3>Student Records</h3>
       </div>
       {student.length > 0 ? (
-        <div className="table-responsive-lg border rounded-3 ">
+        <div className="table-responsive-lg border border-dark rounded-3 ">
           <table
             className="table table-striped
       table-hover	

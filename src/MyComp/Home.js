@@ -172,7 +172,13 @@ const Home = () => {
 
   return (
     <div className="row mt-5 m-3 ">
-      <div className=" col-4  border rounded p-4 h-25">
+      <div
+        className="text-center border border-dark
+       rounded-3 p-3 mb-1"
+      >
+        <h3>Student Managment System</h3>
+      </div>
+      <div className=" col-4  border border-dark rounded p-4 h-25">
         <div className="col mb-2">
           <input
             type="text"
@@ -301,7 +307,7 @@ const Home = () => {
           )}
         </div>
       </div>
-      <div className="col-8 border rounded p-4 ">
+      <div className="col-8 border border-dark rounded p-4 ">
         {userData.length > 0 ? (
           <div
             className="table-responsive overflow-y-scroll"
